@@ -8,10 +8,19 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    var numberRandom: Int!
 
+    @IBOutlet weak var moeda: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if numberRandom == 1 {
+            moeda.image = UIImage(named: "head")
+        }else{
+            moeda.image = UIImage(named: "tail")
+        }
         // Do any additional setup after loading the view.
     }
     
